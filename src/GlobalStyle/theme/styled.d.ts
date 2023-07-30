@@ -4,15 +4,15 @@ declare module "styled-components" {
   export interface DefaultTheme {
     colors: {
       primary: string;
-      secondary: string;
-      tertiary: string;
-      fifth: string;
       light: string;
       dark: string;
+      bg: { primary: string; secondary: string };
+      txt: { primary: string; secondary: string };
     };
 
     fonts: {
       primary: string;
+      secondary: string;
     };
 
     fontSizes: {
@@ -20,6 +20,7 @@ declare module "styled-components" {
       small: string;
       smaller: string;
       large: string;
+      extralarge: string;
     };
   }
 }

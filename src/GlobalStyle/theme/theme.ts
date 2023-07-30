@@ -1,22 +1,30 @@
 import { DefaultTheme } from "styled-components";
+import "@fontsource/rubik";
+import "@fontsource/roboto";
 
 const theme: DefaultTheme = {
   colors: {
-    primary: "#435FC4",
-    secondary: "#2CCD28",
-    fifth: "#EEEBF8",
-    tertiary: "#FF0000",
+    bg: {
+      primary: "#08080B",
+      secondary: "#14141A",
+    },
+    txt: {
+      primary: "#E1E1E1",
+      secondary: "#A6A6A6",
+    },
+    primary: "#827AE0",
     light: "#FFFFFF",
     dark: "#000000",
   },
 
-  fonts: { primary: "Roboto" },
+  fonts: { primary: "Roboto", secondary: "Rubik" },
 
   fontSizes: {
+    smaller: "14px",
     small: "18px",
-    large: "28px",
     medium: "24px",
-    smaller: "16px",
+    large: "28px",
+    extralarge: "58px",
   },
 };
 

@@ -7,9 +7,7 @@ const GlobalStyle = createGlobalStyle`
   ::after {
     box-sizing: border-box;
   }
-
   
-
  html, body {
   min-height: 100vh;
   margin: 0;
