@@ -9,6 +9,7 @@ const BurgerMenuStyled = styled.nav`
   right: 0;
   height: 50px;
   z-index: 9999999;
+  color: white;
 
   .mobile-menu {
     &__btn {
@@ -84,7 +85,7 @@ const BurgerMenuStyled = styled.nav`
 
     &__link {
       text-decoration: none;
-      color: ${(props) => props.theme.colors.primary};
+      /* color: ${(props) => props.theme.colors.primary}; */
     }
 
     &__checkbox {

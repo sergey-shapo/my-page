@@ -17,6 +17,11 @@ const GlobalStyle = createGlobalStyle`
   font-family: 'Roboto',sans-serif;
   font-display: swap;
   vertical-align: baseline;
+  font-weight: 400;
+
+  letter-spacing: 0.5px;
+  word-wrap: break-word;
+  color: ${(props) => props.theme.colors.txt.secondary}
   }
   
   h1,

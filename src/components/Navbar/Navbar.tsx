@@ -1,18 +1,16 @@
 import { NavLink } from "react-router-dom";
 import NavbarStyled from "./NavbarStyled";
-import BurgerMenu from "../BurgerMenu/BurgerMenu";
 
 const Navbar = (): React.ReactElement => {
   return (
     <NavbarStyled>
       <NavLink to="/">Home</NavLink>
-      <NavLink to="/">About</NavLink>
-      <NavLink to="/">Resume</NavLink>
-      <NavLink to="/">Portfolio</NavLink>
+      <NavLink to="/a">About</NavLink>
+      <NavLink to="/b">Resume</NavLink>
+      <NavLink to="/c">Portfolio</NavLink>
       <NavLink className="contact" to="/">
         HIRE ME
       </NavLink>
-      <BurgerMenu />
     </NavbarStyled>
   );
 };
