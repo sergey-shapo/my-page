@@ -1,10 +1,10 @@
-import { NavLink } from "react-router-dom";
 import HeaderStyled from "./HeaderStyled";
+import Navbar from "../Navbar/Navbar";
 
 const Header = (): React.ReactElement => {
   return (
     <HeaderStyled>
-      <NavLink to="/">SSH</NavLink>
+      <Navbar />
     </HeaderStyled>
   );
 };
