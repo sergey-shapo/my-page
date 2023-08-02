@@ -3,7 +3,7 @@ import { styled } from "styled-components";
 const CardStyled = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
   padding: 30px;
   background-color: ${(props) => props.theme.colors.bg.secondary};
 
@@ -29,6 +29,8 @@ const CardStyled = styled.div`
   .card-info {
     border-bottom: 1px solid #3b3b3b;
     padding-bottom: 20px;
+    text-align: left;
+    /* line-height: 2; */
   }
 
   .year {
