@@ -20,7 +20,7 @@ const theme: DefaultTheme = {
   fonts: { primary: "Roboto", secondary: "Rubik" },
 
   fontSizes: {
-    smaller: "14px",
+    smaller: "16px",
     small: "18px",
     medium: "24px",
     large: "28px",
