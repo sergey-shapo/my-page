@@ -1,6 +1,7 @@
 import { DefaultTheme } from "styled-components";
 import "@fontsource/rubik";
 import "@fontsource/roboto";
+import "@fontsource/rubik/700.css";
 
 const theme: DefaultTheme = {
   colors: {

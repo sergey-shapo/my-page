@@ -7,7 +7,7 @@ const MainStyled = styled.main`
   justify-content: center;
   background-color: transparent;
   border: 1px solid #000;
-  gap: 40px;
+  gap: 80px;
   width: 80%;
   font-family: ${(props) => props.theme.fonts.secondary};
 
@@ -43,7 +43,7 @@ const MainStyled = styled.main`
     gap: 50px;
   }
 
-  span:nth-child(2) {
+  .name {
     color: ${(props) => props.theme.colors.txt.primary};
     font-size: 38px;
     line-height: 40px;
@@ -51,36 +51,6 @@ const MainStyled = styled.main`
 
   .resume-area span {
     color: ${(props) => props.theme.colors.txt.primary};
-  }
-
-  h2 {
-    position: relative;
-    text-align: center;
-  }
-
-  h2 .resume {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-weight: 700;
-    text-transform: uppercase;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-color: #212121;
-    -webkit-text-stroke-width: 0.5px;
-    font-size: 90px;
-    z-index: 0;
-    letter-spacing: 2px;
-  }
-
-  .qualifications {
-    position: relative;
-    text-transform: capitalize;
-    margin-bottom: 0;
-    z-index: 1;
-    color: ${(props) => props.theme.colors.txt.primary};
-    font-weight: 600;
-    font-size: 38px;
   }
 
   .resume-section {
@@ -92,7 +62,20 @@ const MainStyled = styled.main`
   .cv-heading {
     color: ${(props) => props.theme.colors.txt.primary};
     font-size: ${(props) => props.theme.fontSizes.medium};
-    /* text-align: left; */
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
   }
 
   button {
@@ -109,6 +92,13 @@ const MainStyled = styled.main`
     .resume-section {
       grid-template-columns: repeat(1, 1FR);
     }
+  }
+
+  @media screen and (min-width: 1050px) {
+    width: 70%;
+  }
+  @media screen and (max-width: 600px) {
+    width: 95%;
   }
 `;
 
