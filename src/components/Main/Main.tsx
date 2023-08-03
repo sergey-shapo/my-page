@@ -16,8 +16,8 @@ const Main = (): React.ReactElement => {
       <section className="about-area">
         <span>Hello</span>
         <span className="name">Sergey Shaposhnik</span>
-        <img src={pic} alt="" width={200} />
-        <p>A Professional Full Stack Web Developer.</p>
+        <img src={pic} alt="" width={300} />
+        <p>A Professional Full Stack Web Developer</p>
         <Button text="Download CV" onClick={handleDownloadCV}></Button>
       </section>
       <section className="resume-area">
