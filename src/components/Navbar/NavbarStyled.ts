@@ -27,7 +27,7 @@ const NavbarStyled = styled.header`
     color: ${(props) => props.theme.colors.light};
   }
 
-  @media (max-width: 499px) {
+  @media (max-width: 699px) {
     display: none;
   }
 `;

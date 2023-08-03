@@ -29,7 +29,7 @@ const SectionHeadingStyled = styled.div`
     -webkit-text-stroke-width: 2px;
     z-index: 0;
     letter-spacing: 3px;
-    font-size: 82px;
+    font-size: clamp(70px, 10vw, 100px);
   }
 `;
 

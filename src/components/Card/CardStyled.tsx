@@ -10,10 +10,8 @@ const CardStyled = styled.div`
   border-radius: 10px;
 
   h2 {
-    text-align: left;
     font-size: 22px;
     color: ${(props) => props.theme.colors.txt.primary};
-    text-align: left;
   }
 
   h3 {
@@ -29,7 +27,7 @@ const CardStyled = styled.div`
   .card-info {
     border-bottom: 1px solid #3b3b3b;
     padding-bottom: 20px;
-    text-align: left;
+
     /* line-height: 2; */
   }
 

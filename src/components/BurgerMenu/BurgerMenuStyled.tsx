@@ -128,7 +128,7 @@ const BurgerMenuStyled = styled.nav`
     }
   }
 
-  @media (min-width: 500px) {
+  @media (min-width: 700px) {
     display: none;
   }
 `;
