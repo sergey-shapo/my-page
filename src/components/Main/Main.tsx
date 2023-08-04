@@ -58,58 +58,58 @@ const Main = (): React.ReactElement => {
         <div className="skills-container">
           <img
             src="https://profilinator.rishav.dev/skills-assets/typescript-original.svg"
-            height={100}
-            width={100}
+            height={70}
+            width={70}
           />
           <img
             src="https://profilinator.rishav.dev/skills-assets/react-original-wordmark.svg"
-            height={100}
-            width={100}
+            height={70}
+            width={70}
           />
           <img
             src="https://profilinator.rishav.dev/skills-assets/css3-original-wordmark.svg"
-            height={100}
-            width={100}
+            height={70}
+            width={70}
           />
           <img
             src="https://profilinator.rishav.dev/skills-assets/html5-original-wordmark.svg"
-            height={100}
-            width={100}
+            height={70}
+            width={70}
           />
           <img
             src="https://profilinator.rishav.dev/skills-assets/javascript-original.svg"
-            height={100}
-            width={100}
+            height={70}
+            width={70}
           />
           <img
             src="https://profilinator.rishav.dev/skills-assets/redux-original.svg"
             alt="Redux"
-            height={100}
-            width={100}
+            height={70}
+            width={70}
           />
           <img
             src="https://profilinator.rishav.dev/skills-assets/git-scm-icon.svg"
             alt="Git"
-            height={100}
-            width={100}
+            height={70}
+            width={70}
           />
           <img
             src="https://profilinator.rishav.dev/skills-assets/nextjs.png"
             alt="NextJS"
-            height={100}
-            width={100}
+            height={70}
+            width={70}
           />
           <img
             src="https://profilinator.rishav.dev/skills-assets/tailwindcss.svg"
             alt="Tailwind CSS"
-            height={100}
-            width={100}
+            height={70}
+            width={70}
           />
           <img
             src="https://profilinator.rishav.dev/skills-assets/bootstrap-plain.svg"
             alt="Bootstrap"
-            height={100}
-            width={100}
+            height={70}
+            width={70}
           />
           <img
             src="https://profilinator.rishav.dev/skills-assets/sass-original.svg"
@@ -120,20 +120,32 @@ const Main = (): React.ReactElement => {
           <img
             src="https://profilinator.rishav.dev/skills-assets/jest.svg"
             alt="Jest"
-            height={100}
-            width={100}
+            height={70}
+            width={70}
           />
           <img
             src="https://profilinator.rishav.dev/skills-assets/figma-icon.svg"
             alt="Figma"
-            height={100}
-            width={100}
+            height={70}
+            width={70}
           />
           <img
             src="https://profilinator.rishav.dev/skills-assets/java-original-wordmark.svg"
             alt="Java"
-            height={100}
-            width={100}
+            height={70}
+            width={70}
+          />
+          <img
+            src="https://profilinator.rishav.dev/skills-assets/mysql-original-wordmark.svg"
+            alt="MySQL"
+            height={70}
+            width={70}
+          />
+          <img
+            src="https://profilinator.rishav.dev/skills-assets/docker-original-wordmark.svg"
+            alt="Docker"
+            height={70}
+            width={70}
           />
         </div>
       </section>

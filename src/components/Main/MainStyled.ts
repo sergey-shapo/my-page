@@ -10,6 +10,7 @@ const MainStyled = styled.main`
   width: 80%;
   font-family: ${(props) => props.theme.fonts.secondary};
   margin-top: 150px;
+  max-width: 1000px;
 
   .about-area,
   .resume-area {
@@ -71,28 +72,28 @@ const MainStyled = styled.main`
     flex-direction: column;
     gap: 60px;
     margin-bottom: 100px;
-  }
-
-  .skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    /* display: grid;
-    grid-template-columns: repeat(7, 1FR);
-    justify-items: center;
-    align-items: center; */
-    gap: 20px;
     width: 100%;
   }
 
+  .skills-container {
+    /* display: flex;
+    flex-wrap: wrap;
+    align-items: center; */
+    /* justify-content: space-between; */
+    display: grid;
+    grid-template-columns: repeat(8, 1FR);
+    justify-items: center;
+    gap: 20px;
+  }
+
   .skills-container img {
-    /* padding: 15px; */
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
-    width: 7%;
+    width: 100%;
     height: auto;
-    min-width: 70px;
+    max-width: 70px;
+    min-width: 50px;
+    margin-bottom: 50px;
   }
 
   .skills-container img:hover {
@@ -116,11 +117,22 @@ const MainStyled = styled.main`
     .resume-section {
       grid-template-columns: repeat(1, 1FR);
     }
+
+    .skills-container {
+      grid-template-columns: repeat(4, 1FR);
+      justify-items: center;
+      gap: 20px;
+
+      & img {
+        margin-bottom: 20px;
+      }
+    }
   }
 
   @media screen and (min-width: 1050px) {
     width: 70%;
   }
+
   @media screen and (max-width: 600px) {
     width: 95%;
     margin-top: 100px;
