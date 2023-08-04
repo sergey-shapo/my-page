@@ -5,7 +5,7 @@ const MainStyled = styled.main`
   flex-direction: column;
   align-items: center;
   background-color: transparent;
-  gap: 200px;
+  gap: 160px;
   width: 80%;
   font-family: ${(props) => props.theme.fonts.secondary};
   margin-top: 150px;
@@ -136,8 +136,13 @@ const MainStyled = styled.main`
     }
 
     .skills-container {
-      column-gap: 30px; /* Espacio horizontal entre columnas */
+      column-gap: 30px;
       row-gap: 50px;
+    }
+
+    .about-area img {
+      width: 400px;
+      height: auto;
     }
   }
 
