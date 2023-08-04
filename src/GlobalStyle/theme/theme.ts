@@ -6,7 +6,7 @@ import "@fontsource/rubik/700.css";
 const theme: DefaultTheme = {
   colors: {
     bg: {
-      primary: "#08080B",
+      primary: "#060608",
       secondary: "#14141A",
     },
     txt: {

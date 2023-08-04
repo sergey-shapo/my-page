@@ -5,6 +5,7 @@ const MainStyled = styled.button`
   background-color: ${(props) => props.theme.colors.primary};
   color: ${(props) => props.theme.colors.light};
   border-radius: 30px;
+  max-width: 150px;
 `;
 
 export default MainStyled;

@@ -14,11 +14,15 @@ const Main = (): React.ReactElement => {
   return (
     <MainStyled>
       <section className="about-area">
-        <span>Hello</span>
-        <span className="name">Sergey Shaposhnik</span>
-        <img src={pic} alt="" width={300} />
-        <p>A Professional Full Stack Web Developer</p>
-        <Button text="Download CV" onClick={handleDownloadCV}></Button>
+        <div className="about-heading">
+          <span>Hello</span>
+
+          <span className="name">Sergey Shaposhnik</span>
+
+          <p>A Professional Full Stack Web Developer</p>
+          <Button text="Download CV" onClick={handleDownloadCV}></Button>
+        </div>
+        <img src={pic} alt="sergey posing" width={300} />
       </section>
       <section className="resume-area">
         <SectionHeading frontTxt="My qualifications" backgroundTxt="Resume" />
