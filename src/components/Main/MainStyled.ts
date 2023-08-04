@@ -5,11 +5,11 @@ const MainStyled = styled.main`
   flex-direction: column;
   align-items: center;
   background-color: transparent;
-  border: 1px solid #000;
-  gap: 200px;
+  gap: 160px;
   width: 80%;
   font-family: ${(props) => props.theme.fonts.secondary};
   margin-top: 150px;
+  max-width: 1000px;
 
   .about-area,
   .resume-area {
@@ -18,6 +18,16 @@ const MainStyled = styled.main`
     align-items: center;
     justify-content: center;
     gap: 60px;
+    width: 100%;
+  }
+
+  .about-heading {
+    display: flex;
+    flex-direction: column;
+
+    & p {
+      margin: 30px 0;
+    }
   }
 
   .about-area span:first-child {
@@ -71,35 +81,29 @@ const MainStyled = styled.main`
     flex-direction: column;
     gap: 60px;
     margin-bottom: 100px;
-  }
-
-  .skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    /* display: grid;
-    grid-template-columns: repeat(7, 1FR);
-    justify-items: center;
-    align-items: center; */
-    gap: 20px;
     width: 100%;
   }
 
+  .skills-container {
+    display: grid;
+    grid-template-columns: repeat(8, 1FR);
+    justify-items: center;
+    gap: 20px;
+  }
+
   .skills-container img {
-    /* padding: 15px; */
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
-    width: 7%;
+    width: 100%;
     height: auto;
-    min-width: 70px;
+    max-width: 70px;
+    min-width: 50px;
   }
 
   .skills-container img:hover {
-    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
-    /* border: 3px solid ${(props) => props.theme.colors.primary}; */
-    /* border-radius: 10px; */
+    transform: scale(1.1);
   }
 
   button {
@@ -116,14 +120,39 @@ const MainStyled = styled.main`
     .resume-section {
       grid-template-columns: repeat(1, 1FR);
     }
+
+    .skills-container {
+      grid-template-columns: repeat(4, 1FR);
+      justify-items: center;
+    }
   }
 
   @media screen and (min-width: 1050px) {
     width: 70%;
+
+    .about-area {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .skills-container {
+      column-gap: 30px;
+      row-gap: 50px;
+    }
+
+    .about-area img {
+      width: 400px;
+      height: auto;
+    }
   }
+
   @media screen and (max-width: 600px) {
     width: 95%;
     margin-top: 100px;
+
+    .skills-container img {
+      padding: 5px;
+    }
   }
 `;
 

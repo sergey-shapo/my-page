@@ -7,11 +7,7 @@ const ContainerStyled = styled.div`
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-color: black;
-
-  /* @media screen and (min-width: 1050px) {
-    padding: 0 200px;
-  } */
+  background-color: ${(props) => props.theme.colors.bg.primary};
 `;
 
 export default ContainerStyled;
