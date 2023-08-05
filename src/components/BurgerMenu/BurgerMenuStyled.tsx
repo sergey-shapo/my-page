@@ -4,12 +4,22 @@ const BurgerMenuStyled = styled.nav`
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  top: 0;
-  left: 0;
-  right: 0;
-  /* height: 50px; */
-  z-index: 9999999;
+  z-index: 10;
   color: white;
+
+  .open {
+    overflow: hidden;
+    overflow-y: hidden;
+  }
+
+  a {
+    padding-bottom: 2px;
+  }
+
+  .active {
+    color: ${(props) => props.theme.colors.primary};
+    border-bottom: 1px solid ${(props) => props.theme.colors.primary};
+  }
 
   .mobile-menu {
     &__btn {
@@ -20,7 +30,7 @@ const BurgerMenuStyled = styled.nav`
       width: 35px;
       height: 30px;
       cursor: pointer;
-      transition: 0.4s;
+      transition: 0.1s;
     }
 
     &__icon {
@@ -61,7 +71,7 @@ const BurgerMenuStyled = styled.nav`
       z-index: 999;
       height: 0;
       opacity: 1;
-      transition: 0.5s;
+      transition: 0.3s;
       transition-delay: 0.2s;
       overflow: hidden;
       background-color: ${(props) => props.theme.colors.bg.primary};

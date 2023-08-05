@@ -13,7 +13,7 @@ const Main = (): React.ReactElement => {
 
   return (
     <MainStyled>
-      <section className="about-area">
+      <section id="about" className="about-area">
         <div className="about-heading">
           <span>Hello</span>
 
@@ -24,7 +24,7 @@ const Main = (): React.ReactElement => {
         </div>
         <img src={pic} alt="sergey posing" width={300} />
       </section>
-      <section className="resume-area">
+      <section id="resume" className="resume-area">
         <SectionHeading frontTxt="My qualifications" backgroundTxt="Resume" />
         <div className="resume-section">
           <div className="education">
@@ -57,7 +57,7 @@ const Main = (): React.ReactElement => {
           </div>
         </div>
       </section>
-      <section className="skills">
+      <section id="skills" className="skills">
         <SectionHeading frontTxt="My Expertise" backgroundTxt="Skills" />
         <div className="skills-container">
           <img

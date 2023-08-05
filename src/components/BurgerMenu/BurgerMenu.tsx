@@ -1,15 +1,17 @@
-import { NavLink } from "react-router-dom";
 import BurgerMenuStyled from "./BurgerMenuStyled";
 import { useRef } from "react";
+import { useLocation } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const BurgerMenu = (): React.ReactElement => {
+  const location = useLocation();
   const checkboxRef = useRef<HTMLInputElement>(null);
 
-  // const handleClick = () => {
-  //   if (checkboxRef.current) {
-  //     checkboxRef.current.checked = false;
-  //   }
-  // };
+  const handleClick = () => {
+    if (checkboxRef.current) {
+      checkboxRef.current.checked = false;
+    }
+  };
 
   return (
     <BurgerMenuStyled className="mobile-menu">
@@ -24,13 +26,33 @@ const BurgerMenu = (): React.ReactElement => {
       </label>
       <div className="mobile-menu__container">
         <ul className="mobile-menu__list">
-          <NavLink to="/">Home</NavLink>
-          <NavLink to="/">About</NavLink>
-          <NavLink to="/">Resume</NavLink>
-          <NavLink to="/">Portfolio</NavLink>
-          <NavLink className="contact" to="/">
+          <HashLink
+            smooth
+            to="/#about"
+            className={location.hash === "#about" ? "active" : ""}
+            onClick={handleClick}
+          >
+            About
+          </HashLink>
+          <HashLink
+            smooth
+            to="/#resume"
+            className={location.hash === "#resume" ? "active" : ""}
+            onClick={handleClick}
+          >
+            Resume
+          </HashLink>
+          <HashLink
+            smooth
+            to="/#skills"
+            className={location.hash === "#skills" ? "active" : ""}
+            onClick={handleClick}
+          >
+            Skills
+          </HashLink>
+          {/* <NavLink className="contact" to="/">
             HIRE ME
-          </NavLink>
+          </NavLink> */}
         </ul>
       </div>
     </BurgerMenuStyled>

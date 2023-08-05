@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const NavbarStyled = styled.header`
+const NavbarStyled = styled.nav`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10,8 +10,13 @@ const NavbarStyled = styled.header`
   font-weight: 400;
   padding: 20px 0;
 
+  a {
+    padding-bottom: 2px;
+  }
+
   .active {
     color: ${(props) => props.theme.colors.primary};
+
     border-bottom: 1px solid ${(props) => props.theme.colors.primary};
   }
 
