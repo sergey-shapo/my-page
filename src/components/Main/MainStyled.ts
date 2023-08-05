@@ -58,6 +58,14 @@ const MainStyled = styled.main`
     white-space: nowrap;
   }
 
+  .about-area img {
+    max-width: 380px;
+    min-width: 300px;
+    height: auto;
+    max-height: 100%;
+    width: 100%;
+  }
+
   .resume-area span {
     color: ${(props) => props.theme.colors.txt.primary};
   }

@@ -15,9 +15,11 @@ const Card = ({
 }: CardProps): React.ReactElement => {
   return (
     <CardStyled>
-      <span className="year">{year}</span>
-      <h2>{heading}</h2>
-      <div className="card-info">{where}</div>
+      <h2> {heading}</h2>
+      <div className="card-info">
+        <span className="year">{year}</span>
+        {where}
+      </div>
       <div className="card-description">{description}</div>
     </CardStyled>
   );
