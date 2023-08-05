@@ -24,10 +24,7 @@ const MainStyled = styled.main`
   .about-heading {
     display: flex;
     flex-direction: column;
-
-    & p {
-      margin: 30px 0;
-    }
+    gap: 30px;
   }
 
   .about-area span:first-child {
@@ -38,6 +35,7 @@ const MainStyled = styled.main`
     font-family: ${(props) => props.theme.fonts.secondary};
     -webkit-text-fill-color: transparent;
     align-self: start;
+    font-size: clamp(75px, 5vw, 100px);
   }
 
   .about-area span:first-child::after {
@@ -57,6 +55,15 @@ const MainStyled = styled.main`
     color: ${(props) => props.theme.colors.txt.primary};
     font-size: 38px;
     line-height: 40px;
+    white-space: nowrap;
+  }
+
+  .about-area img {
+    max-width: 380px;
+    min-width: 300px;
+    height: auto;
+    max-height: 100%;
+    width: 100%;
   }
 
   .resume-area span {
@@ -141,8 +148,11 @@ const MainStyled = styled.main`
     }
 
     .about-area img {
-      width: 400px;
+      max-width: 500px;
+      min-width: 300px;
       height: auto;
+      max-height: 100%;
+      width: 100%;
     }
   }
 

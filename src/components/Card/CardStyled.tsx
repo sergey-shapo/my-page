@@ -22,11 +22,14 @@ const CardStyled = styled.div`
   .card-description {
     font-size: ${(props) => props.theme.fontSizes.smaller};
     font-family: ${(props) => props.theme.fonts.primary};
+    line-height: 140%;
   }
 
   .card-info {
     border-bottom: 1px solid #3b3b3b;
     padding-bottom: 20px;
+    font-size: clamp(13px, 5vw, 20px);
+    white-space: nowrap;
 
     /* line-height: 2; */
   }
@@ -36,12 +39,12 @@ const CardStyled = styled.div`
     background-color: ${(props) => props.theme.colors.primary};
     border-radius: 5px;
     padding: 5px;
-    margin-right: 5px;
+    margin-right: 15px;
     text-align: center;
     max-width: 60px;
   }
 
-  @media screen and (max-width: 1050px) {
+  /* @media screen and (max-width: 1050px) {
     .card-info {
       display: flex;
       flex-direction: column;
@@ -53,7 +56,7 @@ const CardStyled = styled.div`
     }
 
     gap: 12px;
-  }
+  } */
 `;
 
 export default CardStyled;

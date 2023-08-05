@@ -62,26 +62,31 @@ const Main = (): React.ReactElement => {
         <div className="skills-container">
           <img
             src="https://profilinator.rishav.dev/skills-assets/typescript-original.svg"
+            alt="TypeScript"
             height={70}
             width={70}
           />
           <img
             src="https://profilinator.rishav.dev/skills-assets/react-original-wordmark.svg"
+            alt="React"
             height={70}
             width={70}
           />
           <img
             src="https://profilinator.rishav.dev/skills-assets/css3-original-wordmark.svg"
+            alt="CSS3"
             height={70}
             width={70}
           />
           <img
             src="https://profilinator.rishav.dev/skills-assets/html5-original-wordmark.svg"
+            alt="HTML5"
             height={70}
             width={70}
           />
           <img
             src="https://profilinator.rishav.dev/skills-assets/javascript-original.svg"
+            alt="JavaScript"
             height={70}
             width={70}
           />
