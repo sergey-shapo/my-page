@@ -7,7 +7,7 @@ const BurgerMenuStyled = styled.nav`
   top: 0;
   left: 0;
   right: 0;
-  height: 50px;
+  /* height: 50px; */
   z-index: 9999999;
   color: white;
 
@@ -55,8 +55,7 @@ const BurgerMenuStyled = styled.nav`
       display: flex;
       align-items: center;
       justify-content: center;
-      top: 100px;
-      height: 500px;
+      top: 60px;
       left: 0;
       right: 0;
       z-index: 999;
@@ -65,6 +64,7 @@ const BurgerMenuStyled = styled.nav`
       transition: 0.5s;
       transition-delay: 0.2s;
       overflow: hidden;
+      background-color: ${(props) => props.theme.colors.bg.primary};
     }
 
     &__list {
@@ -99,7 +99,7 @@ const BurgerMenuStyled = styled.nav`
           }
 
           &__container {
-            height: 1000%;
+            height: 100vh;
             transition-delay: 0s;
           }
 
