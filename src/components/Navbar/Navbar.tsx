@@ -1,6 +1,5 @@
 import { HashLink } from "react-router-hash-link";
-import { useLocation } from "react-router-dom"; // Importamos useLocation
-
+import { useLocation } from "react-router-dom";
 import NavbarStyled from "./NavbarStyled";
 
 const Navbar = (): React.ReactElement => {
@@ -10,8 +9,8 @@ const Navbar = (): React.ReactElement => {
     <NavbarStyled>
       <HashLink
         smooth
-        to="/#about"
-        className={location.hash === "#about" ? "active" : ""}
+        to="/#top"
+        className={location.hash === "#top" ? "active" : ""}
       >
         About
       </HashLink>

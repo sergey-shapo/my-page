@@ -7,11 +7,6 @@ const BurgerMenuStyled = styled.nav`
   z-index: 10;
   color: white;
 
-  .open {
-    overflow: hidden;
-    overflow-y: hidden;
-  }
-
   a {
     padding-bottom: 2px;
   }
