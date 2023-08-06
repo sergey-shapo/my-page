@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 
-const CardStyled = styled.div`
+const CardStyled = styled.li`
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -30,33 +30,21 @@ const CardStyled = styled.div`
     padding-bottom: 20px;
     font-size: clamp(13px, 5vw, 20px);
     white-space: nowrap;
-
-    /* line-height: 2; */
   }
 
   .year {
     font-size: ${(props) => props.theme.fontSizes.smaller};
-    background-color: ${(props) => props.theme.colors.primary};
+    background: linear-gradient(
+      90deg,
+      rgba(133, 123, 225, 1) 0%,
+      rgba(177, 127, 234, 1) 100%
+    );
     border-radius: 5px;
-    padding: 5px;
+    padding: 5px 8px;
     margin-right: 15px;
     text-align: center;
     max-width: 60px;
   }
-
-  /* @media screen and (max-width: 1050px) {
-    .card-info {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    h2 {
-      padding: 0;
-    }
-
-    gap: 12px;
-  } */
 `;
 
 export default CardStyled;

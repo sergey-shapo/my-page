@@ -25,11 +25,11 @@ const BurgerMenu = (): React.ReactElement => {
         <div className="mobile-menu__icon"></div>
       </label>
       <div className="mobile-menu__container">
-        <ul className="mobile-menu__list">
+        <div className="mobile-menu__list">
           <HashLink
             smooth
-            to="/#about"
-            className={location.hash === "#about" ? "active" : ""}
+            to="/#top"
+            className={location.hash === "#top" ? "active" : ""}
             onClick={handleClick}
           >
             About
@@ -53,7 +53,7 @@ const BurgerMenu = (): React.ReactElement => {
           {/* <NavLink className="contact" to="/">
             HIRE ME
           </NavLink> */}
-        </ul>
+        </div>
       </div>
     </BurgerMenuStyled>
   );
