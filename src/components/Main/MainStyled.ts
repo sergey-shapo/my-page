@@ -35,7 +35,7 @@ const MainStyled = styled.main`
     font-family: ${(props) => props.theme.fonts.secondary};
     -webkit-text-fill-color: transparent;
     align-self: start;
-    font-size: clamp(75px, 5vw, 100px);
+    font-size: clamp(65px, 5vw, 100px);
   }
 
   .about-area span:first-child::after {
@@ -162,6 +162,18 @@ const MainStyled = styled.main`
 
     .skills-container img {
       padding: 5px;
+    }
+
+    .about-heading {
+      gap: 15px;
+    }
+
+    .about-area {
+      gap: 20px;
+    }
+
+    .about-area img {
+      width: 300px;
     }
   }
 `;

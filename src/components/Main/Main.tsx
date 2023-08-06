@@ -16,9 +16,7 @@ const Main = (): React.ReactElement => {
       <section id="about" className="about-area">
         <div className="about-heading">
           <span>Hello</span>
-
           <span className="name">Sergey Shaposhnik</span>
-
           <p>A Professional Full Stack Web Developer</p>
           <Button text="Download CV" onClick={handleDownloadCV}></Button>
         </div>
