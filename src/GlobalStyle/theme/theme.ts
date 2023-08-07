@@ -21,6 +21,7 @@ const theme: DefaultTheme = {
   fonts: { primary: "Roboto", secondary: "Rubik" },
 
   fontSizes: {
+    extrasmall: "14px",
     smaller: "16px",
     small: "18px",
     medium: "24px",
