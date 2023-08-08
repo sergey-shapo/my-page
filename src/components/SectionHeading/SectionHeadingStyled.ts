@@ -1,6 +1,7 @@
 import { styled } from "styled-components";
 
 const SectionHeadingStyled = styled.div`
+  font-family: ${(props) => props.theme.fonts.secondary};
   .front-txt {
     position: relative;
     text-transform: capitalize;

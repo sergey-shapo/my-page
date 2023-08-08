@@ -15,14 +15,6 @@ const HeaderStyled = styled.header`
   background-color: ${(props) => props.theme.colors.bg.primary};
   max-width: 1000px;
 
-  @media screen and (min-width: 1050px) {
-    width: 70%;
-  }
-
-  @media screen and (max-width: 600px) {
-    width: 95%;
-  }
-
   &::after {
     content: "";
     position: absolute;
@@ -31,6 +23,14 @@ const HeaderStyled = styled.header`
     right: -1000px;
     height: 1px;
     background-color: ${(props) => props.theme.colors.bg.secondary};
+  }
+
+  @media screen and (min-width: 1050px) {
+    width: 70%;
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 95%;
   }
 `;
 

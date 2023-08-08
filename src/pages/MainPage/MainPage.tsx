@@ -1,18 +1,25 @@
 import pic from "/SSHtransparent.avif";
 import cv from "/CV-Sergey-Shapo.pdf";
-import Button from "../Button/Button";
-import MainStyled from "./MainStyled";
-import Card from "../Card/Card";
+import MainPageStyled from "./MainPageStyled";
 import { education, experience } from "../../resume";
-import SectionHeading from "../SectionHeading/SectionHeading";
+import Button from "../../components/Button/Button";
+import SectionHeading from "../../components/SectionHeading/SectionHeading";
+import { useNavigate } from "react-router-dom";
+import Card from "../../components/Card/Card";
+import Footer from "../../components/Footer/Footer";
 
-const Main = (): React.ReactElement => {
+const MainPage = (): React.ReactElement => {
+  const navigate = useNavigate();
   const handleDownloadCV = () => {
     window.open(cv, "_blank");
   };
 
+  const handleTalkClick = () => {
+    navigate("/contact");
+  };
+
   return (
-    <MainStyled>
+    <MainPageStyled>
       <section id="about" className="about-area">
         <div className="about-heading">
           <span>Hello</span>
@@ -156,9 +163,14 @@ const Main = (): React.ReactElement => {
           />
         </div>
       </section>
+      <section className="contact-area">
+        <h2>Interested to Work With Me?</h2>
+        <Button text="LET'S TALK" onClick={handleTalkClick}></Button>
+      </section>
       {/* <section className="portfolio">Portfolio</section> */}
-    </MainStyled>
+      <Footer />
+    </MainPageStyled>
   );
 };
 
-export default Main;
+export default MainPage;

@@ -21,8 +21,12 @@ const GlobalStyle = createGlobalStyle`
   font-weight: 400;
   letter-spacing: 0.5px;
   word-wrap: break-word;
-  color: ${(props) => props.theme.colors.txt.secondary}
+  color: ${(props) => props.theme.colors.txt.secondary};
+
   }
+
+  
+
   
   h1,
   h2,

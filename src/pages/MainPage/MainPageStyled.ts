@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const MainStyled = styled.main`
+const MainPageStyled = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,7 +12,8 @@ const MainStyled = styled.main`
   max-width: 1000px;
 
   .about-area,
-  .resume-area {
+  .resume-area,
+  .contact-area {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -87,7 +88,6 @@ const MainStyled = styled.main`
     display: flex;
     flex-direction: column;
     gap: 60px;
-    margin-bottom: 100px;
     width: 100%;
   }
 
@@ -115,6 +115,24 @@ const MainStyled = styled.main`
 
   button {
     color: white;
+  }
+
+  .contact-area {
+    border: 1px solid ${(props) => props.theme.colors.bg.secondary};
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 0;
+    position: relative;
+
+    /* &::after {
+      content: "";
+      position: absolute;
+      bottom: 50%;
+      left: -1000px;
+      right: -1000px;
+      height: 1px;
+      background-color: ${(props) => props.theme.colors.bg.secondary};
+    } */
   }
 
   ul {
@@ -178,4 +196,4 @@ const MainStyled = styled.main`
   }
 `;
 
-export default MainStyled;
+export default MainPageStyled;
