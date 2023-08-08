@@ -8,6 +8,8 @@ const ContainerStyled = styled.div`
   justify-content: center;
   min-height: 100vh;
   background-color: ${(props) => props.theme.colors.bg.primary};
+  min-height: 100wh;
+  overflow: hidden;
 `;
 
 export default ContainerStyled;

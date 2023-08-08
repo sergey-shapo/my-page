@@ -10,6 +10,7 @@ const MainStyled = styled.button`
   color: ${(props) => props.theme.colors.light};
   border-radius: 30px;
   max-width: 150px;
+  letter-spacing: 1px;
 `;
 
 export default MainStyled;

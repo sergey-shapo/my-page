@@ -4,11 +4,18 @@ import MainPageStyled from "./MainPageStyled";
 import { education, experience } from "../../resume";
 import Button from "../../components/Button/Button";
 import SectionHeading from "../../components/SectionHeading/SectionHeading";
+import { useNavigate } from "react-router-dom";
 import Card from "../../components/Card/Card";
+import Footer from "../../components/Footer/Footer";
 
 const MainPage = (): React.ReactElement => {
+  const navigate = useNavigate();
   const handleDownloadCV = () => {
     window.open(cv, "_blank");
+  };
+
+  const handleTalkClick = () => {
+    navigate("/contact");
   };
 
   return (
@@ -156,7 +163,12 @@ const MainPage = (): React.ReactElement => {
           />
         </div>
       </section>
+      <section className="contact-area">
+        <h2>Interested to Work With Me?</h2>
+        <Button text="LET'S TALK" onClick={handleTalkClick}></Button>
+      </section>
       {/* <section className="portfolio">Portfolio</section> */}
+      <Footer />
     </MainPageStyled>
   );
 };

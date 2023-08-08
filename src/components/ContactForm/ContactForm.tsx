@@ -27,13 +27,14 @@ const ContactForm = (): React.ReactElement => {
 
   return (
     <ContactFormStyled ref={form} onSubmit={sendEmail}>
+      <div className="input-wrapper"></div>
       <label>Name</label>
       <input type="text" name="user_name" />
       <label>Email</label>
       <input type="email" name="user_email" />
       <label>Message</label>
       <textarea name="message" />
-      <input type="submit" value="Send" />
+      <input className="button" type="submit" value="SEND MESSAGE" />
     </ContactFormStyled>
   );
 };
