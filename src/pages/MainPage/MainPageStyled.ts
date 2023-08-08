@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const MainStyled = styled.main`
+const MainPageStyled = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -178,4 +178,4 @@ const MainStyled = styled.main`
   }
 `;
 
-export default MainStyled;
+export default MainPageStyled;

@@ -7,6 +7,7 @@ const FooterStyled = styled.div`
   justify-content: center;
   color: ${(props) => props.theme.colors.txt.secondary};
   font-size: ${(props) => props.theme.fontSizes.extrasmall};
+  background-color: ${(props) => props.theme.colors.bg.primary};
   padding: 30px 0;
   gap: 30px;
 

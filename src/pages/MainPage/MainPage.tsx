@@ -1,18 +1,18 @@
 import pic from "/SSHtransparent.avif";
 import cv from "/CV-Sergey-Shapo.pdf";
-import Button from "../Button/Button";
-import MainStyled from "./MainStyled";
-import Card from "../Card/Card";
+import MainPageStyled from "./MainPageStyled";
 import { education, experience } from "../../resume";
-import SectionHeading from "../SectionHeading/SectionHeading";
+import Button from "../../components/Button/Button";
+import SectionHeading from "../../components/SectionHeading/SectionHeading";
+import Card from "../../components/Card/Card";
 
-const Main = (): React.ReactElement => {
+const MainPage = (): React.ReactElement => {
   const handleDownloadCV = () => {
     window.open(cv, "_blank");
   };
 
   return (
-    <MainStyled>
+    <MainPageStyled>
       <section id="about" className="about-area">
         <div className="about-heading">
           <span>Hello</span>
@@ -157,8 +157,8 @@ const Main = (): React.ReactElement => {
         </div>
       </section>
       {/* <section className="portfolio">Portfolio</section> */}
-    </MainStyled>
+    </MainPageStyled>
   );
 };
 
-export default Main;
+export default MainPage;
