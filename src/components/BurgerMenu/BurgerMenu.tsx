@@ -1,5 +1,5 @@
 import BurgerMenuStyled from "./BurgerMenuStyled";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
@@ -12,6 +12,23 @@ const BurgerMenu = (): React.ReactElement => {
       checkboxRef.current.checked = false;
     }
   };
+
+  useEffect(() => {
+    const handleMenuToggle = () => {
+      const checkbox = checkboxRef.current;
+      if (checkbox && checkbox.checked) {
+        document.body.style.overflow = "hidden";
+      } else {
+        document.body.style.overflow = "auto";
+      }
+    };
+
+    window.addEventListener("click", handleMenuToggle);
+
+    return () => {
+      window.removeEventListener("click", handleMenuToggle);
+    };
+  }, []);
 
   return (
     <BurgerMenuStyled className="mobile-menu">
