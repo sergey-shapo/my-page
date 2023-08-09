@@ -10,10 +10,10 @@ const Footer = (): React.ReactElement => {
   return (
     <FooterStyled>
       <div className="footer-icons">
-        <Link to={emailURL} target="_blank">
+        <Link to={emailURL} target="_blank" aria-label="mail link">
           <EmailSVG />
         </Link>
-        <Link to={linkedinURL} target="_blank">
+        <Link to={linkedinURL} target="_blank" aria-label="linkedin link">
           <InSVG />
         </Link>
       </div>
