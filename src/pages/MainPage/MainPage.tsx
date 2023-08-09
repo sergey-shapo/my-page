@@ -27,7 +27,7 @@ const MainPage = (): React.ReactElement => {
           <p>A Professional Full Stack Web Developer</p>
           <Button text="Download CV" onClick={handleDownloadCV}></Button>
         </div>
-        <img src={pic} alt="sergey posing" width={300} />
+        <img src={pic} alt="sergey posing" width={300} height={400} />
       </section>
       <section id="resume" className="resume-area">
         <SectionHeading frontTxt="My qualifications" backgroundTxt="Resume" />
