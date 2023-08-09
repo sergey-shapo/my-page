@@ -90,7 +90,6 @@ const BurgerMenuStyled = styled.nav`
 
     &__link {
       text-decoration: none;
-      /* color: ${(props) => props.theme.colors.primary}; */
     }
 
     &__checkbox {
