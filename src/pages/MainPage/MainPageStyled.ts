@@ -28,21 +28,25 @@ const MainPageStyled = styled.main`
     gap: 30px;
   }
 
-  .about-area span:first-child {
+  .about-area span:first-child,
+  .name {
     font-size: ${(props) => props.theme.fontSizes.extralarge};
     font-weight: 700;
     -webkit-text-stroke-color: ${(props) => props.theme.colors.primary};
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 1.5px;
     font-family: ${(props) => props.theme.fonts.secondary};
     -webkit-text-fill-color: transparent;
     align-self: start;
-    font-size: clamp(65px, 5vw, 100px);
+    font-size: clamp(48px, 5vw, 100px);
   }
 
-  .about-area span:first-child::after {
+  .about-area span:first-child::after,
+  .name {
     content: "I'm";
-    -webkit-text-stroke-color: ${(props) => props.theme.colors.light};
+    -webkit-text-stroke-color: none;
+    -webkit-text-stroke-width: 0;
     margin-left: 15px;
+    -webkit-text-fill-color: ${(props) => props.theme.colors.txt.primary};
   }
 
   .resume-headings {
@@ -53,10 +57,7 @@ const MainPageStyled = styled.main`
   }
 
   .name {
-    color: ${(props) => props.theme.colors.txt.primary};
-    font-size: 38px;
-    line-height: 40px;
-    white-space: nowrap;
+    margin: 0;
   }
 
   .about-area img {
