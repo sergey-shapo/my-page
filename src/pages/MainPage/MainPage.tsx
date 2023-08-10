@@ -7,12 +7,34 @@ import SectionHeading from "../../components/SectionHeading/SectionHeading";
 import { useNavigate } from "react-router-dom";
 import Card from "../../components/Card/Card";
 import Footer from "../../components/Footer/Footer";
+import { HashLink } from "react-router-hash-link";
+import { useEffect, useRef } from "react";
+import { ReactComponent as TopSVG } from "../../assets/top1.svg";
 
 const MainPage = (): React.ReactElement => {
+  const topHashLink = useRef<HTMLAnchorElement>(null);
   const navigate = useNavigate();
   const handleDownloadCV = () => {
     window.open(cv, "_blank");
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (topHashLink.current) {
+        if (window.scrollY < 1000) {
+          topHashLink.current.className = "hide";
+        } else {
+          topHashLink.current.className = " top-link";
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const handleTalkClick = () => {
     navigate("/contact");
@@ -20,6 +42,10 @@ const MainPage = (): React.ReactElement => {
 
   return (
     <MainPageStyled>
+      <HashLink ref={topHashLink} smooth to="/#top" className="top-link ">
+        Top
+        <TopSVG />
+      </HashLink>
       <section id="about" className="about-area">
         <div className="about-heading">
           <span>Hello</span>

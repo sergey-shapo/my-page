@@ -136,6 +136,38 @@ const MainPageStyled = styled.main`
     } */
   }
 
+  .top-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    position: fixed;
+    letter-spacing: 3px;
+    bottom: 50px;
+    right: -10px;
+    /* border: 1px solid #fff; */
+    /* transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg); */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    -webkit-animation: slide-in-blurred-bottom 0.6s
+      cubic-bezier(0.23, 1, 0.32, 1) both;
+    animation: slide-in-blurred-bottom 0.6s cubic-bezier(0.23, 1, 0.32, 1) both;
+  }
+
+  .top-link svg {
+    fill: ${(props) => props.theme.colors.txt.secondary};
+    width: 30px;
+    height: 30px;
+  }
+
+  .hide {
+    display: none;
+  }
+
   ul {
     display: grid;
     gap: 20px;
@@ -150,6 +182,52 @@ const MainPageStyled = styled.main`
     .skills-container {
       grid-template-columns: repeat(4, 1FR);
       justify-items: center;
+    }
+  }
+
+  @-webkit-keyframes slide-in-blurred-bottom {
+    0% {
+      -webkit-transform: translateY(1000px) scaleY(2.5) scaleX(0.2);
+      transform: translateY(1000px) scaleY(2.5) scaleX(0.2);
+      -webkit-transform-origin: 50% 100%;
+      transform-origin: 50% 100%;
+      -webkit-filter: blur(40px);
+      filter: blur(40px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+      transform: translateY(0) scaleY(1) scaleX(1);
+      -webkit-transform-origin: 50% 50%;
+      transform-origin: 50% 50%;
+      -webkit-filter: blur(0);
+      filter: blur(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-blurred-bottom {
+    0% {
+      -webkit-transform: translateY(1000px) scaleY(2.5) scaleX(0.2);
+      transform: translateY(1000px) scaleY(2.5) scaleX(0.2);
+      -webkit-transform-origin: 50% 100%;
+      transform-origin: 50% 100%;
+      -webkit-filter: blur(40px);
+      filter: blur(40px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+      transform: translateY(0) scaleY(1) scaleX(1);
+      -webkit-transform-origin: 50% 50%;
+      transform-origin: 50% 50%;
+      -webkit-filter: blur(0);
+      filter: blur(0);
+      opacity: 1;
+      transform: rotate(-90deg);
+      -webkit-transform: rotate(-90deg);
+      -moz-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+      -o-transform: rotate(-90deg);
     }
   }
 
