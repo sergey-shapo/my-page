@@ -18,8 +18,10 @@ const FooterStyled = styled.div`
 
   .footer-icons svg {
     fill: ${(props) => props.theme.colors.txt.secondary};
+  }
 
-    &:hover {
+  @media screen and (min-width: 600px) {
+    .footer-icons svg:hover {
       fill: ${(props) => props.theme.colors.primary};
     }
   }

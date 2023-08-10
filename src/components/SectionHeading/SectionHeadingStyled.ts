@@ -2,6 +2,8 @@ import { styled } from "styled-components";
 
 const SectionHeadingStyled = styled.div`
   font-family: ${(props) => props.theme.fonts.secondary};
+  white-space: nowrap;
+
   .front-txt {
     position: relative;
     text-transform: capitalize;
@@ -10,6 +12,7 @@ const SectionHeadingStyled = styled.div`
     color: ${(props) => props.theme.colors.txt.primary};
     font-weight: 600;
     font-size: 33px;
+    word-wrap: nowrap;
   }
 
   position: relative;
@@ -30,7 +33,7 @@ const SectionHeadingStyled = styled.div`
     -webkit-text-stroke-width: 2px;
     z-index: 0;
     letter-spacing: 3px;
-    font-size: clamp(70px, 10vw, 100px);
+    font-size: clamp(60px, 10vw, 100px);
   }
 `;
 
