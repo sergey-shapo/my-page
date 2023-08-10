@@ -6,7 +6,7 @@ const ContactPageStyled = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 65px;
+  gap: 50px;
 `;
 
 export default ContactPageStyled;

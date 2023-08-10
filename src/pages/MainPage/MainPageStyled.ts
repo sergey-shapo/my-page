@@ -147,12 +147,6 @@ const MainPageStyled = styled.main`
     letter-spacing: 3px;
     bottom: 50px;
     right: -10px;
-    /* border: 1px solid #fff; */
-    /* transform: rotate(-90deg);
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg); */
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
     -webkit-animation: slide-in-blurred-bottom 0.6s
       cubic-bezier(0.23, 1, 0.32, 1) both;
