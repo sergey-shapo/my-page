@@ -1,6 +1,6 @@
 import BurgerMenuStyled from "./BurgerMenuStyled";
 import { useEffect, useRef } from "react";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 const BurgerMenu = (): React.ReactElement => {
@@ -67,9 +67,13 @@ const BurgerMenu = (): React.ReactElement => {
           >
             Skills
           </HashLink>
-          {/* <NavLink className="contact" to="/">
-            HIRE ME
-          </NavLink> */}
+          <Link
+            onClick={handleClick}
+            className="contact"
+            to={location.pathname === "/" ? "/contact" : "/"}
+          >
+            {location.pathname === "/contact" ? "Home" : "LET'S TALK"}
+          </Link>
         </div>
       </div>
     </BurgerMenuStyled>
