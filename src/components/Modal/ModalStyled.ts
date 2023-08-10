@@ -1,20 +1,21 @@
 import { styled } from "styled-components";
 
-const ModalStyled = styled.span`
-  position: fixed;
+const ModalStyled = styled.div`
   padding: 12px;
   color: #00cc66;
-  top: 96%;
-  left: 50%;
   transform: translate(-50%, -50%);
   white-space: nowrap;
+  width: 200px;
+  transform: none;
+  visibility: hidden;
+  align-self: center;
 
   &.error {
     color: red;
   }
 
-  @media (min-width: 450px) {
-    top: 85%;
+  &.visible {
+    visibility: visible;
   }
 `;
 

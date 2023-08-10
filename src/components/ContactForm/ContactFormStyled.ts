@@ -4,6 +4,7 @@ const ContactFormStyled = styled.form`
   display: flex;
   flex-direction: column;
   gap: 10px;
+  padding: 7px;
 
   input,
   textarea {
@@ -22,7 +23,6 @@ const ContactFormStyled = styled.form`
 
   textarea {
     min-height: 120px;
-    margin-bottom: 50px;
     background: transparent;
   }
 

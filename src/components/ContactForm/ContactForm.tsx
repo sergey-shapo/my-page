@@ -15,9 +15,9 @@ const ContactForm = (): React.ReactElement => {
   const sendEmail = (e: SyntheticEvent) => {
     e.preventDefault();
     const isAllFieldCompleted =
-      form.current?.user_name.value.length > 2 &&
-      form.current?.user_email.value.length > 5 &&
-      form.current?.message.value.length > 10;
+      form.current?.user_name.value.length > 1 &&
+      form.current?.user_email.value.length > 1 &&
+      form.current?.message.value.length > 1;
 
     if (form.current && isAllFieldCompleted) {
       emailjs
@@ -53,13 +53,13 @@ const ContactForm = (): React.ReactElement => {
       <input type="email" name="user_email" />
       <label>Message</label>
       <textarea name="message" />
+
+      <Modal
+        text={isError ? errorMessage : successMessage}
+        isError={isError}
+        showModal={showModal}
+      />
       <input className="button" type="submit" value="SEND MESSAGE" />
-      {showModal && (
-        <Modal
-          text={isError ? errorMessage : successMessage}
-          isError={isError}
-        />
-      )}
     </ContactFormStyled>
   );
 };
