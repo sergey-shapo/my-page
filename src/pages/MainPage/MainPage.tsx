@@ -24,7 +24,7 @@ const MainPage = (): React.ReactElement => {
         if (window.scrollY < 1000) {
           topHashLink.current.className = "hide";
         } else {
-          topHashLink.current.className = " top-link";
+          topHashLink.current.className = "top-link";
         }
       }
     };
@@ -42,7 +42,7 @@ const MainPage = (): React.ReactElement => {
 
   return (
     <MainPageStyled>
-      <HashLink ref={topHashLink} smooth to="/#top" className="top-link ">
+      <HashLink ref={topHashLink} smooth to="/#top" className="hide">
         Top
         <TopSVG />
       </HashLink>
