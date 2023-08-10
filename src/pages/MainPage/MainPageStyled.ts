@@ -137,6 +137,7 @@ const MainPageStyled = styled.main`
   }
 
   .top-link {
+    z-index: 10;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -153,6 +154,12 @@ const MainPageStyled = styled.main`
     -ms-transform: rotate(-90deg);
     -o-transform: rotate(-90deg); */
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    -webkit-animation: slide-in-blurred-bottom 0.6s
+      cubic-bezier(0.23, 1, 0.32, 1) both;
+    animation: slide-in-blurred-bottom 0.6s cubic-bezier(0.23, 1, 0.32, 1) both;
+  }
+
+  .slide-in-blurred-bottom {
     -webkit-animation: slide-in-blurred-bottom 0.6s
       cubic-bezier(0.23, 1, 0.32, 1) both;
     animation: slide-in-blurred-bottom 0.6s cubic-bezier(0.23, 1, 0.32, 1) both;
