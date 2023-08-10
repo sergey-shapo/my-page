@@ -1,4 +1,4 @@
-import pic from "/SSHtransparent.avif";
+import pic from "/me.avif";
 import cv from "/CV-Sergey-Shapo.pdf";
 import MainPageStyled from "./MainPageStyled";
 import { education, experience } from "../../resume";

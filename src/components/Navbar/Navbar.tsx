@@ -1,5 +1,5 @@
 import { HashLink } from "react-router-hash-link";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import NavbarStyled from "./NavbarStyled";
 
 const Navbar = (): React.ReactElement => {
@@ -28,12 +28,14 @@ const Navbar = (): React.ReactElement => {
       >
         Skills
       </HashLink>
+      <Link
+        className="contact"
+        to={location.pathname === "/" ? "/contact" : "/"}
+      >
+        {location.pathname === "/contact" ? "Home" : "LET'S TALK"}
+      </Link>
     </NavbarStyled>
   );
 };
 
 export default Navbar;
-
-/* <NavLink className="contact" to="/">
-        HIRE ME
-      </NavLink> */

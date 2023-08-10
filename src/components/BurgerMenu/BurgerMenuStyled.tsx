@@ -11,6 +11,13 @@ const BurgerMenuStyled = styled.nav`
     padding-bottom: 2px;
   }
 
+  .contact {
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 1px solid ${(props) => props.theme.colors.primary};
+    font-size: 12px;
+  }
+
   .active {
     color: ${(props) => props.theme.colors.primary};
     border-bottom: 1px solid ${(props) => props.theme.colors.primary};

@@ -9,6 +9,7 @@ const ModalStyled = styled.div`
   transform: none;
   visibility: hidden;
   align-self: center;
+  text-align: center;
 
   &.error {
     color: red;
