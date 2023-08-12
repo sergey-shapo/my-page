@@ -16,11 +16,10 @@ const BurgerMenu = (): React.ReactElement => {
   useEffect(() => {
     const handleMenuToggle = () => {
       const checkbox = checkboxRef.current;
-      if (checkbox && checkbox.checked) {
-        document.body.style.overflow = "hidden";
-      } else {
-        document.body.style.overflow = "auto";
-      }
+
+      checkbox && checkbox.checked
+        ? (document.body.style.overflow = "hidden")
+        : (document.body.style.overflow = "auto");
     };
 
     window.addEventListener("click", handleMenuToggle);

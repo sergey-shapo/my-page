@@ -20,7 +20,7 @@ const BurgerMenuStyled = styled.nav`
 
   .active {
     color: ${(props) => props.theme.colors.primary};
-    border-bottom: 1px solid ${(props) => props.theme.colors.primary};
+    /* border-bottom: 1px solid ${(props) => props.theme.colors.primary}; */
   }
 
   .mobile-menu {
