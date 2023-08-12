@@ -58,10 +58,10 @@ const MainPage = (): React.ReactElement => {
       <section id="resume" className="resume-area">
         <SectionHeading frontTxt="My qualifications" backgroundTxt="Resume" />
         <div className="resume-section">
-          <div className="education">
-            <h2 className="cv-heading">Education</h2>
+          <div className="experience">
+            <h2 className="cv-heading">Experience</h2>
             <ul>
-              {education.map((cv) => (
+              {experience.map((cv) => (
                 <Card
                   key={cv.heading}
                   description={cv.description}
@@ -72,10 +72,10 @@ const MainPage = (): React.ReactElement => {
               ))}
             </ul>
           </div>
-          <div className="experience">
-            <h2 className="cv-heading">Experience</h2>
+          <div className="education">
+            <h2 className="cv-heading">Education</h2>
             <ul>
-              {experience.map((cv) => (
+              {education.map((cv) => (
                 <Card
                   key={cv.heading}
                   description={cv.description}
