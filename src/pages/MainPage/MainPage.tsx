@@ -1,5 +1,5 @@
 import pic from "/me.avif";
-import cv from "/CV-Sergey-Shapo.pdf";
+import cv from "/shaposhnik.pdf";
 import MainPageStyled from "./MainPageStyled";
 import { education, experience } from "../../resume";
 import Button from "../../components/Button/Button";
