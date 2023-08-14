@@ -1,14 +1,14 @@
 import HeaderStyled from "./HeaderStyled";
 import Navbar from "../Navbar/Navbar";
 import BurgerMenu from "../BurgerMenu/BurgerMenu";
-import logo from "/ssh.png";
+// import logo from "/1.png";
 import { Link } from "react-router-dom";
 
 const Header = (): React.ReactElement => {
   return (
     <HeaderStyled>
       <Link to="/">
-        <img src={logo} alt="Logo" width={38} height={44} />
+        {/* <img src={logo} alt="Logo" width={55} height={44} /> */}
       </Link>
       <Navbar />
       <BurgerMenu />

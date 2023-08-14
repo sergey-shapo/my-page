@@ -48,7 +48,7 @@ const CardStyled = styled.li`
     max-width: 60px;
   }
 
-  @media (max-width: 520px) {
+  @media (max-width: 1000px) {
     .card-info {
       flex-direction: column;
       align-items: start;
