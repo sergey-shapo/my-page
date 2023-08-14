@@ -133,6 +133,7 @@ const MainPageStyled = styled.main`
       right: -1000px;
       height: 1px;
       background-color: ${(props) => props.theme.colors.bg.secondary};
+      z-index: 0;
     } */
   }
 
@@ -174,6 +175,21 @@ const MainPageStyled = styled.main`
     gap: 20px;
     grid-template-columns: repeat(1, 1FR);
   }
+  ///////////////////
+  .an {
+    animation-duration: 0.6s;
+    animation-name: slidein;
+  }
+
+  @keyframes slidein {
+    from {
+      width: 70%;
+      opacity: 20%;
+      padding-top: 70%;
+    }
+  }
+
+  ////////////////////
 
   @media screen and (max-width: 800px) {
     .resume-section {
