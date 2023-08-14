@@ -183,9 +183,8 @@ const MainPageStyled = styled.main`
 
   @keyframes slidein {
     from {
-      width: 70%;
-      opacity: 20%;
-      padding-top: 70%;
+      opacity: 50%;
+      padding-top: 80%;
     }
   }
 
