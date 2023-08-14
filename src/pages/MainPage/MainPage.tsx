@@ -8,33 +8,16 @@ import { useNavigate } from "react-router-dom";
 import Card from "../../components/Card/Card";
 import Footer from "../../components/Footer/Footer";
 import { HashLink } from "react-router-hash-link";
-import { useEffect, useRef } from "react";
 import { ReactComponent as TopSVG } from "../../assets/top1.svg";
+import { useInView } from "react-intersection-observer";
 
 const MainPage = (): React.ReactElement => {
-  const topHashLink = useRef<HTMLAnchorElement>(null);
   const navigate = useNavigate();
   const handleDownloadCV = () => {
     window.open(cv, "_blank");
   };
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (topHashLink.current) {
-        if (window.scrollY < 1000) {
-          topHashLink.current.className = "hide";
-        } else {
-          topHashLink.current.className = "top-link";
-        }
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  const { ref, inView } = useInView();
 
   const handleTalkClick = () => {
     navigate("/contact");
@@ -42,14 +25,14 @@ const MainPage = (): React.ReactElement => {
 
   return (
     <MainPageStyled>
-      <HashLink ref={topHashLink} smooth to="/#top" className="hide">
+      <HashLink smooth to="/#top" className={inView ? "top-link" : "hide"}>
         Top
         <TopSVG />
       </HashLink>
       <section id="about" className="about-area">
         <div className="about-heading">
           <span>Hello</span>
-          <span className="name">Sergey Shaposhnik</span>
+          <span className="name ">Sergey Shaposhnik</span>
           <p>A Professional Full Stack Web Developer</p>
           <Button text="Download CV" onClick={handleDownloadCV}></Button>
         </div>
@@ -88,7 +71,8 @@ const MainPage = (): React.ReactElement => {
           </div>
         </div>
       </section>
-      <section id="skills" className="skills">
+
+      <section id="skills" className={inView ? "skills an" : ""} ref={ref}>
         <SectionHeading frontTxt="My Expertise" backgroundTxt="Skills" />
         <div className="skills-container">
           <img

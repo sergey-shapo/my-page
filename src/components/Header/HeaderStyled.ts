@@ -13,7 +13,7 @@ const HeaderStyled = styled.header`
   width: 100%;
   margin: 0 auto;
   background-color: ${(props) => props.theme.colors.bg.primary};
-  border-bottom: 2px solid ${(props) => props.theme.colors.bg.secondary};
+  /* border-bottom: 0px solid ${(props) => props.theme.colors.bg.secondary}; */
   max-width: 1000px;
   width: 100%;
   padding: 15px 10px;
@@ -24,7 +24,7 @@ const HeaderStyled = styled.header`
     bottom: 0;
     left: -1000px;
     right: -1000px;
-    height: 1px;
+    height: 2px;
     background-color: ${(props) => props.theme.colors.bg.secondary};
   }
 
