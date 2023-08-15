@@ -4,9 +4,10 @@ const CardStyled = styled.li`
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding: 30px;
+  padding: 30px clamp(17px, 5vw, 30px);
   background-color: ${(props) => props.theme.colors.bg.secondary};
-
+  box-sizing: border-box;
+  max-width: 100%;
   border-radius: 10px;
 
   h2 {
@@ -30,7 +31,7 @@ const CardStyled = styled.li`
     align-items: center;
     border-bottom: 1px solid #3b3b3b;
     padding-bottom: 20px;
-    font-size: clamp(13px, 5vw, 20px);
+    font-size: clamp(14px, 2vw, 20px);
     white-space: nowrap;
   }
 
