@@ -74,7 +74,7 @@ const MainPageStyled = styled.main`
   .resume-section {
     display: grid;
     grid-template-columns: repeat(2, 1FR);
-    gap: 60px;
+    gap: 20px;
   }
 
   .cv-heading {
@@ -206,7 +206,7 @@ const MainPageStyled = styled.main`
   }
   ////////////////////
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 950px) {
     .resume-section {
       grid-template-columns: repeat(1, 1FR);
     }

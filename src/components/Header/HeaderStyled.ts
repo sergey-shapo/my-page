@@ -10,13 +10,11 @@ const HeaderStyled = styled.header`
   align-items: center;
   justify-content: space-between;
   padding: 10px 0;
-  width: 100%;
   margin: 0 auto;
   background-color: ${(props) => props.theme.colors.bg.primary};
-  /* border-bottom: 0px solid ${(props) => props.theme.colors.bg.secondary}; */
+  border-bottom: 0px solid ${(props) => props.theme.colors.bg.secondary};
   max-width: 1000px;
-  width: 100%;
-  padding: 15px 10px;
+  width: 80%;
 
   &::after {
     content: "";
@@ -28,13 +26,13 @@ const HeaderStyled = styled.header`
     background-color: ${(props) => props.theme.colors.bg.secondary};
   }
 
-  /* @media screen and (min-width: 1050px) {
+  @media screen and (min-width: 1050px) {
     width: 70%;
   }
 
   @media screen and (max-width: 600px) {
     width: 95%;
-  } */
+  }
 `;
 
 export default HeaderStyled;

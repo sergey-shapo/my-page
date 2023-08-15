@@ -6,6 +6,7 @@ const BurgerMenuStyled = styled.nav`
   justify-content: flex-end;
   z-index: 10;
   color: white;
+  padding: 10px 0;
 
   a {
     padding-bottom: 2px;
@@ -20,6 +21,7 @@ const BurgerMenuStyled = styled.nav`
 
   .active {
     color: ${(props) => props.theme.colors.primary};
+    font-size: ${(props) => props.theme.fontSizes.small};
     /* border-bottom: 1px solid ${(props) => props.theme.colors.primary}; */
   }
 
