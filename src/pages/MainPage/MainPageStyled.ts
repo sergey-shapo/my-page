@@ -10,7 +10,6 @@ const MainPageStyled = styled.main`
   font-family: ${(props) => props.theme.fonts.secondary};
   margin-top: 150px;
   max-width: 1000px;
-  border: 1px solid red;
 
   .about-area,
   .resume-area,

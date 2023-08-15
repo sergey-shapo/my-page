@@ -1,13 +1,13 @@
 import { styled } from "styled-components";
 
-const CardStyled = styled.li`
+const CardStyled = styled.div`
   display: flex;
   flex-direction: column;
   gap: 10px;
   padding: 30px clamp(17px, 5vw, 30px);
   background-color: ${(props) => props.theme.colors.bg.secondary};
   box-sizing: border-box;
-  max-width: 100%;
+  max-width: 500px;
   border-radius: 10px;
 
   h2 {

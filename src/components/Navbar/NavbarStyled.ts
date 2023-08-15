@@ -16,8 +16,8 @@ const NavbarStyled = styled.nav`
 
   .active {
     color: ${(props) => props.theme.colors.primary};
-
-    border-bottom: 1px solid ${(props) => props.theme.colors.primary};
+    font-size: ${(props) => props.theme.fontSizes.small};
+    /* border-bottom: 1px solid ${(props) => props.theme.colors.primary}; */
   }
 
   .contact {
