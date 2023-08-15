@@ -22,6 +22,7 @@ const GlobalStyle = createGlobalStyle`
   letter-spacing: 0.5px;
   word-wrap: break-word;
   color: ${(props) => props.theme.colors.txt.secondary};
+  scrollbar-gutter: stable;
   }
 
   

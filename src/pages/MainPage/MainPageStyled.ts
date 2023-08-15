@@ -10,7 +10,6 @@ const MainPageStyled = styled.main`
   font-family: ${(props) => props.theme.fonts.secondary};
   margin-top: 150px;
   max-width: 1000px;
-  overflow: hidden;
 
   .about-area,
   .resume-area,
@@ -20,7 +19,6 @@ const MainPageStyled = styled.main`
     align-items: center;
     justify-content: center;
     gap: 60px;
-    overflow: hidden;
   }
 
   .about-heading {
@@ -176,7 +174,6 @@ const MainPageStyled = styled.main`
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(1, 1FR);
-    overflow: hidden;
   }
   ///////////////////
   .an {

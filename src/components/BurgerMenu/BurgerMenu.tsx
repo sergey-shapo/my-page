@@ -17,7 +17,7 @@ const BurgerMenu = (): React.ReactElement => {
     const handleMenuToggle = () => {
       const checkbox = checkboxRef.current;
 
-      checkbox && checkbox.checked
+      checkbox?.checked
         ? (document.body.style.overflow = "hidden")
         : (document.body.style.overflow = "auto");
     };
