@@ -10,6 +10,7 @@ const MainPageStyled = styled.main`
   font-family: ${(props) => props.theme.fonts.secondary};
   margin-top: 150px;
   max-width: 1000px;
+  overflow: hidden;
 
   .about-area,
   .resume-area,
@@ -19,7 +20,7 @@ const MainPageStyled = styled.main`
     align-items: center;
     justify-content: center;
     gap: 60px;
-    width: 100%;
+    overflow: hidden;
   }
 
   .about-heading {
@@ -85,7 +86,7 @@ const MainPageStyled = styled.main`
     margin-bottom: 50px;
   }
 
-  .skills {
+  #skills {
     display: flex;
     flex-direction: column;
     gap: 60px;
@@ -124,6 +125,7 @@ const MainPageStyled = styled.main`
     gap: 30px;
     padding: 20px 0;
     position: relative;
+    width: 100%;
 
     /* &::after {
       content: "";
@@ -174,20 +176,37 @@ const MainPageStyled = styled.main`
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(1, 1FR);
+    overflow: hidden;
   }
   ///////////////////
   .an {
     animation-duration: 0.6s;
     animation-name: slidein;
+    -webkit-animation-duration: 0.6s;
+    -webkit-animation-name: slidein;
   }
 
   @keyframes slidein {
     from {
-      opacity: 50%;
-      padding-top: 80%;
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
     }
   }
 
+  @-webkit-keyframes slidein {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
   ////////////////////
 
   @media screen and (max-width: 800px) {
@@ -221,6 +240,7 @@ const MainPageStyled = styled.main`
       opacity: 1;
     }
   }
+
   @keyframes slide-in-blurred-bottom {
     0% {
       -webkit-transform: translateY(1000px) scaleY(2.5) scaleX(0.2);

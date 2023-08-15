@@ -10,14 +10,23 @@ import Footer from "../../components/Footer/Footer";
 import { HashLink } from "react-router-hash-link";
 import { ReactComponent as TopSVG } from "../../assets/top1.svg";
 import { useInView } from "react-intersection-observer";
+import { useEffect, useState } from "react";
 
 const MainPage = (): React.ReactElement => {
+  const [isFirstLoad, setIsFirstLoad] = useState(true);
   const navigate = useNavigate();
   const handleDownloadCV = () => {
     window.open(cv, "_blank");
   };
 
   const { ref, inView } = useInView();
+  const { ref: bottomRef, inView: hitBottom } = useInView();
+
+  useEffect(() => {
+    if (hitBottom) {
+      setIsFirstLoad(false);
+    }
+  }, [hitBottom]);
 
   const handleTalkClick = () => {
     navigate("/contact");
@@ -72,7 +81,11 @@ const MainPage = (): React.ReactElement => {
         </div>
       </section>
 
-      <section id="skills" className={inView ? "skills an" : ""} ref={ref}>
+      <section
+        id="skills"
+        className={inView && isFirstLoad ? "skills an" : ""}
+        ref={ref}
+      >
         <SectionHeading frontTxt="My Expertise" backgroundTxt="Skills" />
         <div className="skills-container">
           <img
@@ -173,7 +186,7 @@ const MainPage = (): React.ReactElement => {
           />
         </div>
       </section>
-      <section className="contact-area">
+      <section className="contact-area" ref={bottomRef}>
         <h2>Interested to Work With Me?</h2>
         <Button text="LET'S TALK" onClick={handleTalkClick}></Button>
       </section>
