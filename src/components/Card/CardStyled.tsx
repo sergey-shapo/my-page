@@ -31,7 +31,7 @@ const CardStyled = styled.li`
     align-items: center;
     border-bottom: 1px solid #3b3b3b;
     padding-bottom: 20px;
-    font-size: clamp(14px, 2vw, 20px);
+    font-size: clamp(14px, 1vw, 20px);
     white-space: nowrap;
   }
 
@@ -49,11 +49,11 @@ const CardStyled = styled.li`
     max-width: 60px;
   }
 
-  @media (max-width: 1000px) {
+  @media (max-width: 399px) {
     .card-info {
       flex-direction: column;
       align-items: start;
-      gap: 10px;
+      gap: 15px;
     }
   }
 `;

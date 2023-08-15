@@ -10,6 +10,7 @@ const MainPageStyled = styled.main`
   font-family: ${(props) => props.theme.fonts.secondary};
   margin-top: 150px;
   max-width: 1000px;
+  border: 1px solid red;
 
   .about-area,
   .resume-area,
@@ -74,7 +75,7 @@ const MainPageStyled = styled.main`
   .resume-section {
     display: grid;
     grid-template-columns: repeat(2, 1FR);
-    gap: 60px;
+    gap: 20px;
   }
 
   .cv-heading {
@@ -206,7 +207,7 @@ const MainPageStyled = styled.main`
   }
   ////////////////////
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 950px) {
     .resume-section {
       grid-template-columns: repeat(1, 1FR);
     }
