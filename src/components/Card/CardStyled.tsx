@@ -31,8 +31,15 @@ const CardStyled = styled.div`
     align-items: center;
     border-bottom: 1px solid #3b3b3b;
     padding-bottom: 20px;
-    font-size: clamp(14px, 1vw, 20px);
+    font-size: 15px;
     white-space: nowrap;
+
+    @media (min-width: 399px) {
+      font-size: 14px;
+    }
+    @media (min-width: 1050px) {
+      font-size: clamp(13px, 1vw, 16px);
+    }
   }
 
   .year {
