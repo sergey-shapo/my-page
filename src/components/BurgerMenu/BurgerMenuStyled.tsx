@@ -79,8 +79,7 @@ const BurgerMenuStyled = styled.nav`
       transition-delay: 0.2s;
       overflow: hidden;
       background-color: ${(props) => props.theme.colors.bg.primary};
-      /* border: 1px solid #fff; */
-      width: 100vw;
+      width: 100%;
     }
 
     &__list {
