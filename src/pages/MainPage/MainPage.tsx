@@ -42,7 +42,11 @@ const MainPage = (): React.ReactElement => {
         <div className="about-heading">
           <span>Hello</span>
           <span className="name ">Sergey Shaposhnik</span>
-          <p>A Professional Full Stack Web Developer</p>
+          <p>
+            As a passionate full stack web developer, I thrive on discovering
+            innovative solutions that enhance user experiences while crafting
+            seamless digital journeys.
+          </p>
           <Button text="Download CV" onClick={handleDownloadCV}></Button>
         </div>
         <img src={pic} alt="sergey posing" width={300} height={400} />
