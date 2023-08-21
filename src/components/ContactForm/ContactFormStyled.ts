@@ -9,7 +9,7 @@ const ContactFormStyled = styled.form`
   input,
   textarea {
     background: transparent;
-    border: 1px solid ${(props) => props.theme.colors.bg.secondary};
+    border: 1px solid ${(props) => props.theme.colors.heading};
     border-radius: 0.25rem;
     width: 300px;
     color: white;

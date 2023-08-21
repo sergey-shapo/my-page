@@ -2,10 +2,14 @@ import { Outlet } from "react-router-dom";
 import ContainerStyled from "../shared/ContainerStyled";
 import Header from "../Header/Header";
 
-const Layout = (): React.ReactElement => {
+interface LayoutProps {
+  toggleTheme: () => void;
+}
+
+const Layout = ({ toggleTheme }: LayoutProps): React.ReactElement => {
   return (
     <ContainerStyled>
-      <Header />
+      <Header toggleTheme={toggleTheme} />
       <Outlet />
     </ContainerStyled>
   );

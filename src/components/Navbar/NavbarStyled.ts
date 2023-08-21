@@ -14,6 +14,16 @@ const NavbarStyled = styled.nav`
     padding-bottom: 2px;
   }
 
+  .theme-checkbox {
+    display: none;
+  }
+
+  button {
+    color: aqua;
+    border: 1px solid aqua;
+    padding: 10px;
+  }
+
   .active {
     color: ${(props) => props.theme.colors.primary};
     font-size: ${(props) => props.theme.fontSizes.small};

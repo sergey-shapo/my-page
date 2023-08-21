@@ -5,7 +5,7 @@ const BurgerMenuStyled = styled.nav`
   align-items: center;
   justify-content: flex-end;
   z-index: 10;
-  color: white;
+  color: ${(props) => props.theme.colors.txt.primary};
   padding: 10px 0;
 
   a {
@@ -22,7 +22,6 @@ const BurgerMenuStyled = styled.nav`
   .active {
     color: ${(props) => props.theme.colors.primary};
     font-size: ${(props) => props.theme.fontSizes.small};
-    /* border-bottom: 1px solid ${(props) => props.theme.colors.primary}; */
   }
 
   .mobile-menu {

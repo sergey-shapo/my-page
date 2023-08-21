@@ -11,7 +11,7 @@ const HeaderStyled = styled.header`
   justify-content: space-between;
   padding: 10px 0;
   background-color: ${(props) => props.theme.colors.bg.primary};
-  border-bottom: 1px solid ${(props) => props.theme.colors.bg.secondary};
+  /* border-bottom: 1px solid ${(props) => props.theme.colors.bg.secondary}; */
   max-width: 1000px;
   width: 80%;
   margin: 0 auto;

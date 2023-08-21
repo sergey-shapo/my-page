@@ -29,11 +29,11 @@ const SectionHeadingStyled = styled.div`
     font-weight: 700;
     text-transform: uppercase;
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-color: #212121;
-    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: ${(props) => props.theme.colors.heading};
+    -webkit-text-stroke-width: 1px;
     z-index: 0;
     letter-spacing: 3px;
-    font-size: clamp(68px, 10vw, 100px);
+    font-size: clamp(64px, 10vw, 100px);
   }
 `;
 

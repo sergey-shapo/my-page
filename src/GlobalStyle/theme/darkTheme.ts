@@ -3,7 +3,7 @@ import "@fontsource/rubik";
 import "@fontsource/roboto";
 import "@fontsource/rubik/700.css";
 
-const theme: DefaultTheme = {
+const darkTheme: DefaultTheme = {
   colors: {
     bg: {
       primary: "#060608",
@@ -16,6 +16,7 @@ const theme: DefaultTheme = {
     primary: "#827AE0",
     light: "#FFFFFF",
     dark: "#000000",
+    heading: "#212121",
   },
 
   fonts: { primary: "Roboto", secondary: "Rubik" },
@@ -30,4 +31,4 @@ const theme: DefaultTheme = {
   },
 };
 
-export default theme;
+export default darkTheme;
