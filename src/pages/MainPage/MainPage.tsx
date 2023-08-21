@@ -87,7 +87,7 @@ const MainPage = (): React.ReactElement => {
 
       <section
         id="skills"
-        className={inView && isFirstLoad ? "skills an" : ""}
+        className={inView && isFirstLoad ? "skills" : ""}
         ref={ref}
       >
         <SectionHeading frontTxt="My Expertise" backgroundTxt="Skills" />

@@ -1,12 +1,22 @@
 import { HashLink } from "react-router-hash-link";
 import { Link, useLocation } from "react-router-dom";
 import NavbarStyled from "./NavbarStyled";
+interface LayoutProps {
+  toggleTheme: () => void;
+}
 
-const Navbar = (): React.ReactElement => {
+const Navbar = ({ toggleTheme }: LayoutProps): React.ReactElement => {
   const location = useLocation();
+  console.log(toggleTheme);
 
   return (
     <NavbarStyled>
+      <input
+        className="theme-checkbox"
+        type="checkbox"
+        onChange={toggleTheme}
+      />
+      {/* <button onClick={toggleTheme}></button> */}
       <HashLink
         smooth
         to="/#top"
