@@ -15,7 +15,7 @@ const App = (): React.ReactElement => {
   return (
     <ThemeProvider theme={theme ? darkTheme : lightTheme}>
       <GlobalStyle />
-      <Layout toggleTheme={toggleTheme} />;
+      <Layout toggleTheme={toggleTheme} />
     </ThemeProvider>
   );
 };
