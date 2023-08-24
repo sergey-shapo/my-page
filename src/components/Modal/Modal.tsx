@@ -11,13 +11,13 @@ const Modal = ({
   isError = false,
   showModal,
 }: ModalProps): React.ReactElement => {
-  const visible = showModal ? " visible" : "";
+  const className = isError
+    ? `error ${showModal ? "visible" : ""}`
+    : showModal
+    ? "visible"
+    : "";
 
-  return (
-    <ModalStyled className={isError ? `error ${visible}` : `${visible}`}>
-      {text}
-    </ModalStyled>
-  );
+  return <ModalStyled className={className}>{text}</ModalStyled>;
 };
 
 export default Modal;

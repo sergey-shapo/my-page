@@ -68,6 +68,10 @@ const MainPageStyled = styled.main`
     width: 100%;
   }
 
+  .about-area p {
+    line-height: 22.4px;
+  }
+
   .resume-area span {
     color: ${(props) => props.theme.colors.txt.primary};
   }

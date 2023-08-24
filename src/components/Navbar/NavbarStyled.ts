@@ -15,7 +15,6 @@ const NavbarStyled = styled.nav`
   }
 
   .theme-checkbox {
-    display: none;
   }
 
   button {
