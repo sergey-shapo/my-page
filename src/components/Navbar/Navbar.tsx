@@ -1,25 +1,20 @@
 import { HashLink } from "react-router-hash-link";
 import { Link, useLocation } from "react-router-dom";
 import NavbarStyled from "./NavbarStyled";
-interface LayoutProps {
-  toggleTheme: () => void;
-}
+import CheckBox from "../CheckBox/CheckBox";
+import AppContext from "../../context";
+import { useContext } from "react";
 
-const Navbar = ({ toggleTheme }: LayoutProps): React.ReactElement => {
+const Navbar = (): React.ReactElement => {
   const location = useLocation();
-  console.log(toggleTheme);
+  const changeTheme = useContext(AppContext);
 
   return (
     <NavbarStyled>
-      <input
-        className="theme-checkbox"
-        type="checkbox"
-        onChange={toggleTheme}
-      />
-      {/* <button onClick={toggleTheme}></button> */}
+      <CheckBox onChange={changeTheme}></CheckBox>
       <HashLink
         smooth
-        to="/#top"
+        to="/# top"
         className={location.hash === "#top" ? "active" : ""}
       >
         About
