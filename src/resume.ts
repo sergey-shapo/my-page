@@ -22,6 +22,16 @@ deeper understanding of various aspects of web development.`,
 
 export const experience: CardProps[] = [
   {
+    heading: "EXDESIS",
+    rol: "Front-End Developer",
+    year: "2024",
+    description: `As a mid-level front-end developer, I excel not only in the creation of captivating user
+    interfaces but also in fostering effective teamwork. My responsibilities include
+    reviewing team code within Git environments, ensuring code quality, and promoting
+    best practices.`,
+  },
+
+  {
     heading: "ISDI Coders",
     rol: "Full-Stack Developer",
     year: "2023",
@@ -29,6 +39,7 @@ export const experience: CardProps[] = [
 back-end development, leveraging the power of industry-leading technologies such as 
 React, Next.js, and Express.`,
   },
+
   {
     heading: "Big Creative",
     rol: "Front-End Developer",
@@ -38,11 +49,5 @@ software solution from the ground up.
 Leveraging my expertise in frontend development technologies such as JavaScript 
 and React, I work closely with the team to architect and develop robust, user-friendly 
 application.`,
-  },
-  {
-    heading: "Hudozhka.es",
-    rol: "Co-founder & Front-End Developer",
-    year: "2019",
-    description: `I played a key role in establishing and co-founding a children's art school in the vibrant city of Barcelona. As the front-end developer, I was responsible for crafting the digital face of the school, ensuring an engaging online experience for students and parents alike.`,
   },
 ];

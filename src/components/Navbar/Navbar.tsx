@@ -14,7 +14,7 @@ const Navbar = (): React.ReactElement => {
       <CheckBox onChange={changeTheme}></CheckBox>
       <HashLink
         smooth
-        to="/# top"
+        to="/#top"
         className={location.hash === "#top" ? "active" : ""}
       >
         About

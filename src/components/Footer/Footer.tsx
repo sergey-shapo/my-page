@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Footer = (): React.ReactElement => {
   const linkedinURL = "https://www.linkedin.com/in/sergey-shaposhnik/";
-  const emailAddress = "bboyruso@hotmail.com";
+  const emailAddress = "shapo@mail.com";
   const emailURL = `mailto:${emailAddress}`;
   return (
     <FooterStyled>

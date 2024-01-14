@@ -47,12 +47,12 @@ const ContactForm = (): React.ReactElement => {
   return (
     <ContactFormStyled ref={form} onSubmit={sendEmail}>
       <div className="input-wrapper"></div>
-      <label>Name</label>
-      <input type="text" name="user_name" />
-      <label>Email</label>
-      <input type="email" name="user_email" />
-      <label>Message</label>
-      <textarea name="message" />
+      <label htmlFor="name">Name</label>
+      <input type="text" name="user_name" id="name" />
+      <label htmlFor="email">Email</label>
+      <input type="email" name="user_email" id="email" />
+      <label htmlFor="message">Message</label>
+      <textarea name="message" id="message" />
 
       <Modal
         text={isError ? errorMessage : successMessage}

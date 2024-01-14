@@ -1,4 +1,5 @@
 import ContactForm from "../../components/ContactForm/ContactForm";
+import Footer from "../../components/Footer/Footer";
 import SectionHeading from "../../components/SectionHeading/SectionHeading";
 import ContactPageStyled from "./ContactPageStyled";
 
@@ -10,6 +11,7 @@ const ContactPage = (): React.ReactElement => {
         backgroundTxt="Contact"
       ></SectionHeading>
       <ContactForm />
+      <Footer />
     </ContactPageStyled>
   );
 };
