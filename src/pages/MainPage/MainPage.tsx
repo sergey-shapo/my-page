@@ -105,7 +105,7 @@ const MainPage = (): React.ReactElement => {
             width={70}
           />
           <img
-            src="https://profilinator.rishav.dev/skills-assets/css3-original-wordmark.svg"
+            src="https://profilinator.rishav.dev/skills-assets/angularjs-original.svg"
             alt="CSS3"
             height={70}
             width={70}

@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 
 const ContactPageStyled = styled.div`
-  margin-top: 68px;
+  margin-top: 160px;
   display: flex;
   flex-direction: column;
   align-items: center;
