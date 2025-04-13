@@ -22,22 +22,21 @@ deeper understanding of various aspects of web development.`,
 
 export const experience: CardProps[] = [
   {
+    heading: "Excelia",
+    rol: "Senior Full-Stack Developer",
+    year: "2025",
+    description: `I have successfully undertaken and completed multiple projects in both frontend and 
+back-end development, leveraging the power of industry-leading technologies such as 
+React, Angular, Node.js.`,
+  },
+  {
     heading: "EXDESIS",
     rol: "Front-End Developer",
     year: "2024",
-    description: `As a mid-level front-end developer, I excel not only in the creation of captivating user
+    description: `As a Frontend developer, I excel not only in the creation of captivating user
     interfaces but also in fostering effective teamwork. My responsibilities include
     reviewing team code within Git environments, ensuring code quality, and promoting
     best practices.`,
-  },
-
-  {
-    heading: "ISDI Coders",
-    rol: "Full-Stack Developer",
-    year: "2023",
-    description: `I have successfully undertaken and completed multiple projects in both frontend and 
-back-end development, leveraging the power of industry-leading technologies such as 
-React, Next.js, and Express.`,
   },
 
   {
