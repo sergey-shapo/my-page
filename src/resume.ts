@@ -30,7 +30,7 @@ back-end development, leveraging the power of industry-leading technologies such
 React, Angular, Node.js.`,
   },
   {
-    heading: "EXDESIS",
+    heading: "Exdesis",
     rol: "Front-End Developer",
     year: "2024",
     description: `As a Frontend developer, I excel not only in the creation of captivating user
