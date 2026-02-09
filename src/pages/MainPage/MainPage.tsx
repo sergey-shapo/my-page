@@ -1,4 +1,4 @@
-import pic from "/me.avif";
+import pic from "/ldn.avif";
 // import cv from "/shaposhnik.pdf";
 import MainPageStyled from "./MainPageStyled";
 import { education, experience } from "../../resume";

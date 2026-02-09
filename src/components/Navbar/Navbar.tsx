@@ -1,17 +1,17 @@
 import { HashLink } from "react-router-hash-link";
 import { Link, useLocation } from "react-router-dom";
 import NavbarStyled from "./NavbarStyled";
-import CheckBox from "../CheckBox/CheckBox";
-import AppContext from "../../context";
-import { useContext } from "react";
+// import CheckBox from "../CheckBox/CheckBox";
+// import AppContext from "../../context";
+// import { useContext } from "react";
 
 const Navbar = (): React.ReactElement => {
   const location = useLocation();
-  const changeTheme = useContext(AppContext);
+  // const changeTheme = useContext(AppContext);
 
   return (
     <NavbarStyled>
-      <CheckBox onChange={changeTheme}></CheckBox>
+      {/* <CheckBox onChange={changeTheme}></CheckBox> */}
       <HashLink
         smooth
         to="/#top"

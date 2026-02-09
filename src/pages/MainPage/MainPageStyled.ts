@@ -78,7 +78,7 @@ const MainPageStyled = styled.main`
 
   .resume-section {
     display: grid;
-    grid-template-columns: repeat(2, 1FR);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
 
@@ -98,7 +98,7 @@ const MainPageStyled = styled.main`
 
   .skills-container {
     display: grid;
-    grid-template-columns: repeat(8, 1FR);
+    grid-template-columns: repeat(8, 1fr);
     justify-items: center;
     gap: 20px;
   }
@@ -178,7 +178,7 @@ const MainPageStyled = styled.main`
   ul {
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(1, 1FR);
+    grid-template-columns: repeat(1, 1fr);
   }
   ///////////////////
   .an {
@@ -213,11 +213,11 @@ const MainPageStyled = styled.main`
 
   @media screen and (max-width: 950px) {
     .resume-section {
-      grid-template-columns: repeat(1, 1FR);
+      grid-template-columns: repeat(1, 1fr);
     }
 
     .skills-container {
-      grid-template-columns: repeat(4, 1FR);
+      grid-template-columns: repeat(4, 1fr);
       justify-items: center;
     }
   }
