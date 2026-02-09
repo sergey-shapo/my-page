@@ -1,5 +1,5 @@
 import pic from "/me.avif";
-import cv from "/shaposhnik.pdf";
+// import cv from "/shaposhnik.pdf";
 import MainPageStyled from "./MainPageStyled";
 import { education, experience } from "../../resume";
 import Button from "../../components/Button/Button";
@@ -15,9 +15,9 @@ import { useEffect, useState } from "react";
 const MainPage = (): React.ReactElement => {
   const [isFirstLoad, setIsFirstLoad] = useState(true);
   const navigate = useNavigate();
-  const handleDownloadCV = () => {
-    window.open(cv, "_blank");
-  };
+  // const handleDownloadCV = () => {
+  //   window.open(cv, "_blank");
+  // };
 
   const { ref, inView } = useInView();
   const { ref: bottomRef, inView: hitBottom } = useInView();
@@ -47,7 +47,7 @@ const MainPage = (): React.ReactElement => {
             innovative solutions that enhance user experiences while crafting
             seamless digital journeys.
           </p>
-          <Button text="Download CV" onClick={handleDownloadCV}></Button>
+          {/* <Button text="Download CV" onClick={handleDownloadCV}></Button> */}
         </div>
         <img src={pic} alt="sergey posing" width={300} height={400} />
       </section>
@@ -111,8 +111,8 @@ const MainPage = (): React.ReactElement => {
             width={70}
           />
           <img
-            src="https://profilinator.rishav.dev/skills-assets/html5-original-wordmark.svg"
-            alt="HTML5"
+            src="https://profilinator.rishav.dev/skills-assets/nodejs-original-wordmark.svg"
+            alt="NODEJS"
             height={70}
             width={70}
           />

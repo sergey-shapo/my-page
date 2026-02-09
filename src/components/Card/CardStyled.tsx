@@ -53,7 +53,6 @@ const CardStyled = styled.li`
     padding: 5px 8px;
     margin-right: 15px;
     text-align: center;
-    max-width: 60px;
   }
 
   @media (max-width: 399px) {
